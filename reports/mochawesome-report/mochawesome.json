@@ -1,0 +1,136 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-12-03T08:30:22.373Z",
+    "end": "2017-12-03T08:30:23.446Z",
+    "duration": 1073,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "db8c3e90-186a-4719-a5a7-9f06888838dd",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "5f56fc97-9001-469c-859a-e3ef7af682c3",
+        "title": "Nodeuii Service自动化脚本",
+        "fullFile": "/Users/monkidu/Documents/vueSSR/test/service/router.spec.js",
+        "file": "/test/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "f2b32518-7406-40cc-9f63-e0894bb21839",
+            "title": "API接口测试",
+            "fullFile": "/Users/monkidu/Documents/vueSSR/test/service/router.spec.js",
+            "file": "/test/service/router.spec.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "获取城市列表API",
+                "fullTitle": "Nodeuii Service自动化脚本 API接口测试 获取城市列表API",
+                "timedOut": false,
+                "duration": 1045,
+                "state": "passed",
+                "speed": "slow",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "request()\n    .get('/index/getdata')\n    .set('Accept', 'application/json')\n    .expect('Content-Type', /json/)\n    .expect(200)\n    .end(function(err, res) {\n        if (res.body.length == 11) {\n            done();\n        }else{\n            //done(new Error('城市列表返回数据长度错误'));\n            done(err);\n        }\n    });",
+                "err": {},
+                "isRoot": false,
+                "uuid": "ee8f8a89-1604-4f7e-a6dc-905c9ae93127",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "ee8f8a89-1604-4f7e-a6dc-905c9ae93127"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1045,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "5ca2f261-a489-4228-931d-848772e4deea",
+            "title": "Nodeuii 容错能力测试",
+            "fullFile": "/Users/monkidu/Documents/vueSSR/test/service/router.spec.js",
+            "file": "/test/service/router.spec.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "404容错脚本测试",
+                "fullTitle": "Nodeuii Service自动化脚本 Nodeuii 容错能力测试 404容错脚本测试",
+                "timedOut": false,
+                "duration": 15,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "request()\n    .get('/messages/notfound')\n    .expect(404, done);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "37441f36-4ead-42fd-8a6d-d86b2e304166",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "37441f36-4ead-42fd-8a6d-d86b2e304166"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 15,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2017
+}

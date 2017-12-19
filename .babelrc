@@ -1,0 +1,12 @@
+
+// 这个给webpack
+{
+    "presets": [
+        ["env",{"modules":false}], "stage-0"
+    ],
+    "plugins": ["transform-runtime","babel-polyfill"],
+    "ignore": [
+        "./node_modules",
+        "./src/nodeuii/*"
+    ] 
+}
